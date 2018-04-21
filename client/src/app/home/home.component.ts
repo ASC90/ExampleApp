@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import {MaterializeDirective} from "angular2-materialize";
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class NavbarComponent implements OnInit {
+export class HomeComponent implements OnInit {
 
   constructor() { }
 

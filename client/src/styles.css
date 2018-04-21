@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+div.nav-wrapper a i.material-icons{
+    cursor: pointer;
+}
+div.nav-wrapper a.brand-logo {
+    cursor: pointer;
+}
+.navbar-fixed {
+    z-index: 999 !important; 
+}
+nav .side-nav li a:hover {
+    background-color: #ff80ab;
+}
