@@ -3,5 +3,8 @@
     "tickets": "Billetes",
     "english": "Inglés",
     "spanish": "Español",
-    "language": "Idioma"
+    "language": "Idioma",
+    "date": "Fecha",
+    "correct_date": "Fecha correcta",
+    "required_date": "Fecha requerida"
 }

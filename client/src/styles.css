@@ -11,3 +11,9 @@ div.nav-wrapper a.brand-logo {
 nav .side-nav li a:hover {
     background-color: #ff80ab;
 }
+.picker__date-display {
+    background-color: #ff4081 !important;
+}
+label[data-success], label[data-error] {
+    width: 100%;
+}

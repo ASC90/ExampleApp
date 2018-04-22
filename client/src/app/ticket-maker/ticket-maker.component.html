@@ -1,4 +1,19 @@
 <p>
   ticket-maker works!
 </p>
-<button routerLink="/your-ticket/qr" class="btn">Go to QR</button>
+<div class="container" *ngIf="form">
+  <div class="row">
+    <form class="col s12 m12 l8 xl6 offset-l2 offset-xl3" [formGroup]="form" (click)="submmit()">
+      <div class="row form-group">
+        <div class="input-field col s12">
+          <input materialize="pickadate" class="form-control" id="date" type="text" class="datepicker" [class.valid]="form.controls.date.valid && hasSubmitted"
+            [class.invalid]="form.controls.date.invalid && hasSubmitted" formControlName="date" name="date" autocomplete="false"
+            [materializeParams]="[{format: 'dd/mm/yyyy',  min: today, max: future  ,selectMonths: true , selectYears: 1000, firstDay: 1}]"
+            [materializeActions]="materializeActions">
+          <label for="date" attr.data-error="{{'required_date' | translate}}" attr.data-success="{{'correct_date' | translate}}">{{'date' | translate}}</label>
+        </div>
+      </div>
+      <button class="btn waves-effect">Go to QR</button>
+    </form>
+  </div>
+</div>

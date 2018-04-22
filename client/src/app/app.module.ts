@@ -6,6 +6,7 @@ import { QRCodeModule } from 'angularx-qrcode'; // QR
 import { TranslateModule, TranslateLoader, TranslateService } from '@ngx-translate/core'; // Translate
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpHandler, HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms'; // Reactive forms
 
 
 import { AppComponent } from './app.component';
@@ -47,6 +48,7 @@ const appRoutes: Routes = [
     TicketQrComponent
   ],
   imports: [
+    ReactiveFormsModule,
     HttpClientModule,
     BrowserModule,
     MaterializeModule,
