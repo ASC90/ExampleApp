@@ -5,10 +5,12 @@
     display: flex;
 }
 .flag {
+    border: 2px solid rgba(20, 20, 20, 0.877);
     border-radius: 50%;
     width: 32px;
     height: 32px;
     margin: auto;
+    margin-left: 4px;
     margin-right: 4px;
 }
 .pull-right {

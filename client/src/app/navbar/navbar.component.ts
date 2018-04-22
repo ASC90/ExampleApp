@@ -9,7 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class NavbarComponent implements OnInit {
   eng = 'en';
   esp = 'es';
-  actualLanguage = this.esp;
+  actualLanguage = this.eng;
   constructor( private translate: TranslateService) { }
 
   ngOnInit() {
