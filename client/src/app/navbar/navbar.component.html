@@ -1,7 +1,7 @@
 <div class="navbar-fixed">
   <nav class="nav-extended" class="blue-grey darken-4">
     <div class="nav-wrapper">
-      <a class="brand-logo">Logo</a>
+      <a class="brand-logo" routerLink="/home">Logo</a>
       <a materialize="sideNav" data-activates="mobile-demo" class="button-collapse">
         <i class="material-icons">menu</i>
       </a>
@@ -9,10 +9,64 @@
         <li>
           <a routerLink="/home">Home</a>
         </li>
+        <li>
+          <!-- Dropdown Trigger -->
+          <a class='dropdown-button' data-beloworigin="true" data-activates='dropdown1'>Drop Me!
+            <i class="material-icons">arrow_drop_down</i>
+          </a>
+          <!-- Dropdown Structure -->
+          <ul id='dropdown1' class='dropdown-content'>
+            <li>
+              <a>one</a>
+            </li>
+            <li>
+              <a>two</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a>three</a>
+            </li>
+            <li>
+              <a>
+                <i class="material-icons">view_module</i>four</a>
+            </li>
+            <li>
+              <a href="#!">
+                <i class="material-icons">cloud</i>five</a>
+            </li>
+          </ul>
+        </li>
       </ul>
       <ul class="side-nav pink accent-2 text-white" id="mobile-demo">
         <li>
           <a routerLink="/home" class="waves-effect waves-purple">Home</a>
+        </li>
+        <li>
+          <!-- Dropdown Trigger -->
+          <a class='dropdown-button' data-beloworigin="true" data-activates='dropdown2'>Drop Me!
+            <i class="material-icons">arrow_drop_down</i>
+          </a>
+          <!-- Dropdown Structure -->
+          <ul id='dropdown2' class='dropdown-content'>
+            <li>
+              <a>one</a>
+            </li>
+            <li>
+              <a>two</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a>three</a>
+            </li>
+            <li>
+              <a>
+                <i class="material-icons">view_module</i>four</a>
+            </li>
+            <li>
+              <a href="#!">
+                <i class="material-icons">cloud</i>five</a>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
