@@ -10,6 +10,9 @@
           <a routerLink="/home">Home</a>
         </li>
         <li>
+          <a routerLink="/your-ticket">Ticket</a>
+        </li>
+        <li>
           <!-- Dropdown Trigger -->
           <a class='dropdown-button' data-beloworigin="true" data-activates='dropdown1'>Drop Me!
             <i class="material-icons">arrow_drop_down</i>
@@ -36,10 +39,28 @@
             </li>
           </ul>
         </li>
+        <li>
+            <!-- Dropdown Trigger -->
+            <a class='dropdown-button' data-beloworigin="true" data-activates='drop-language'><img class="flag" src="assets/img/{{actualLanguage}}.png" alt=""/>{{'language' | translate}}
+              <i class="material-icons">arrow_drop_down</i>
+            </a>
+            <!-- Dropdown Structure -->
+            <ul id='drop-language' class='dropdown-content'>
+              <li>
+                <a (click)="changeLanguage(esp)"><img class="flag" src="assets/img/es.png" alt=""/><span class="pull-right">Español</span></a>
+              </li>
+              <li>
+                <a (click)="changeLanguage(eng)"><img class="flag" src="assets/img/en.png" alt=""/><span class="pull-right">Engilsh</span></a>
+              </li>
+            </ul>
+          </li>
       </ul>
       <ul class="side-nav pink accent-2 text-white" id="mobile-demo">
         <li>
           <a routerLink="/home" class="waves-effect waves-purple">Home</a>
+        </li>
+        <li>
+          <a routerLink="/your-ticket">Ticket</a>
         </li>
         <li>
           <!-- Dropdown Trigger -->
@@ -68,6 +89,21 @@
             </li>
           </ul>
         </li>
+        <li>
+            <!-- Dropdown Trigger -->
+            <a class='dropdown-button' data-beloworigin="true" data-activates='drop-mobile-language'><img class="flag" src="assets/img/{{actualLanguage}}.png" alt=""/>{{'language' | translate}}
+              <i class="material-icons">arrow_drop_down</i>
+            </a>
+            <!-- Dropdown Structure -->
+            <ul id='drop-mobile-language' class='dropdown-content'>
+              <li>
+                <a (click)="changeLanguage(esp)"><img class="flag" src="assets/img/es.png" alt=""/><span class="pull-right">Español</span></a>
+              </li>
+              <li>
+                <a (click)="changeLanguage(eng)"><img class="flag" src="assets/img/en.png" alt=""/><span class="pull-right">Engilsh</span></a>
+              </li>
+            </ul>
+          </li>
       </ul>
     </div>
   </nav>
