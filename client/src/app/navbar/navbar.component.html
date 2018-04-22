@@ -7,10 +7,10 @@
       </a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li>
-          <a routerLink="/home">Home</a>
+          <a routerLink="/home">{{'home' | translate}}</a>
         </li>
         <li>
-          <a routerLink="/your-ticket">Ticket</a>
+          <a routerLink="/your-ticket">{{'tickets' | translate}}</a>
         </li>
         <li>
           <!-- Dropdown Trigger -->
@@ -18,7 +18,7 @@
             <i class="material-icons">arrow_drop_down</i>
           </a>
           <!-- Dropdown Structure -->
-          <ul id='dropdown1' class='dropdown-content'>
+          <ul id='dropdown1' class='dropdown-content pink accent-2 text-white'>
             <li>
               <a>one</a>
             </li>
@@ -45,7 +45,7 @@
               <i class="material-icons">arrow_drop_down</i>
             </a>
             <!-- Dropdown Structure -->
-            <ul id='drop-language' class='dropdown-content'>
+            <ul id='drop-language' class='dropdown-content pink accent-2 text-white'>
               <li>
                 <a (click)="changeLanguage(esp)"><img class="flag" src="assets/img/es.png" alt=""/><span class="pull-right">Español</span></a>
               </li>
@@ -57,10 +57,10 @@
       </ul>
       <ul class="side-nav pink accent-2 text-white" id="mobile-demo">
         <li>
-          <a routerLink="/home" class="waves-effect waves-purple">Home</a>
+          <a routerLink="/home" class="waves-effect waves-purple">{{'home' | translate}}</a>
         </li>
         <li>
-          <a routerLink="/your-ticket">Ticket</a>
+          <a routerLink="/your-ticket">{{'tickets' | translate}}</a>
         </li>
         <li>
           <!-- Dropdown Trigger -->
@@ -68,7 +68,7 @@
             <i class="material-icons">arrow_drop_down</i>
           </a>
           <!-- Dropdown Structure -->
-          <ul id='dropdown2' class='dropdown-content'>
+          <ul id='dropdown2' class='dropdown-content pink accent-2 text-white'>
             <li>
               <a>one</a>
             </li>
@@ -95,7 +95,7 @@
               <i class="material-icons">arrow_drop_down</i>
             </a>
             <!-- Dropdown Structure -->
-            <ul id='drop-mobile-language' class='dropdown-content'>
+            <ul id='drop-mobile-language' class='dropdown-content pink accent-2 text-white'>
               <li>
                 <a (click)="changeLanguage(esp)"><img class="flag" src="assets/img/es.png" alt=""/><span class="pull-right">Español</span></a>
               </li>
